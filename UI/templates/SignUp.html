@@ -1,13 +1,36 @@
-<div class="form">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <style type="text/css">
+    .form {
+    border: 1px solid black;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-right: 500px;
+    margin-left: 500px;
+    background-color:grey;
+  }
+  .field-wrap {
+    width: 10%;
+    margin: auto;
+    margin-left: 30%;
+  }
+  #signuptitle {
+    margin-left: 35%;
+  }
+
+  </style>
+</head>
+<body background="jack.jpg">
+  <div class="form">
       
-      <ul class="tab-group">
-        <li class="tab active"><a href="#signup">Sign Up</a></li>
-        <li class="tab"><a href="#login">Log In</a></li>
+  
       </ul>
       
       <div class="tab-content">
         <div id="signup">   
-          <h2>Sign Up</h2>
+          <h2 id="signuptitle"><span><i>Sign Up</span></i></h2>
           
           <form action="/" method="post">
           
@@ -20,7 +43,7 @@
             </div>
         
             <div class="field-wrap">
-              <label>
+              <label><br>
                 Last Name<span class="req">*</span>
               </label>
               <input type="text"required autocomplete="off"/>
@@ -28,52 +51,33 @@
           </div>
 
           <div class="field-wrap">
-            <label>
+            <label><br>
               Email Address<span class="req">*</span>
             </label>
             <input type="email"required autocomplete="off"/>
           </div>
           
           <div class="field-wrap">
-            <label>
+            <label><br>
               Set A Password<span class="req">*</span>
             </label>
             <input type="password"required autocomplete="off"/>
-          </div>
-          
-          <button type="submit" class="button button-block"/>Get Started</button>
-          
-          </form>
-
-        </div>
-        
-        <div id="login">   
-          <h2>Welcome Back.</h2>
-          
-          <form action="/" method="post">
-          
-            <div class="field-wrap">
-            <label>
-              Email Address<span class="req">*</span>
-            </label>
-            <input type="email"required autocomplete="off"/>
-          </div>
-          
+          </div><br>
           <div class="field-wrap">
-            <label>
-              Password<span class="req">*</span>
+            <label><br>
+              confirm Password<span class="req">*</span>
             </label>
             <input type="password"required autocomplete="off"/>
+          </div><br><br>
           </div>
           
-          <p class="forgot"><a href="#">Forgot Password?</a></p>
-          
-          <button class="button button-block"/>Log In</button>
+          <button type="submit" class="button button-block"/>Get Started</button><br><br>
+          <li><a href="sign in.html"><u>if you already have an account click here to log in</u></a></li>
           
           </form>
-
-        </div>
-        
-      </div><!-- tab-content -->
+          </div>
       
 </div> <!-- /form -->
+
+</body>
+</html>
